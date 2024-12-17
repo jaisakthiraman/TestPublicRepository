@@ -1,0 +1,17 @@
+doctype html
+html
+  head
+    title Register
+    link(rel="stylesheet" href="/assets/css/style.css")
+  body
+    .container
+      h1 Register yourself      
+      #Registration-panel
+        form(method="post" action="/purchase/register" name="registrationForm")
+            input(type="text" name="username" placeholder="Name") 
+            input(type="text" name="email" placeholder="E-Mail")
+            input(type="text" name="email" placeholder="City")
+            input(type="password" name="password" placeholder="Password")
+            br
+            button(type="submit" id="loginBtn") Register 
+            button(type="button" id="cancelBtn") Cancel
